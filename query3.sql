@@ -1,2 +1,2 @@
-SELECT b.title, p.name FROM books b, publisher p 
-WHERE b.publisher=p.id AND (publisher=5 OR publisher=6);
+SELECT b.title FROM books b, books_subjects bs
+WHERE b.id=bs.book AND subject IN(3,8);
